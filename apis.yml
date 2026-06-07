@@ -1,10 +1,8 @@
 aid: data-smartdublin-ie
-name: Smart Dublin Open Data
+name: SmartDublin Open Data
 description: >-
-  Smart Dublin Open Data is a municipal government open-data portal for Ireland running CKAN.
-  It exposes the CKAN catalog API, a standardized machine-readable interface over approximately 929 datasets,
-  supporting programmatic dataset search, metadata retrieval, and resource access. Because it runs CKAN, it shares a
-  consistent API surface with every other CKAN portal, making it uniformly harvestable and integrable.
+  SmartDublin Open Data is a municipal government open-data portal for Ireland running CKAN.
+  It exposes the CKAN catalog API over approximately 929 datasets.
 kind: government
 image: https://kinlane-productions.s3.amazonaws.com/apis-json/apis-json-logo.jpg
 url: https://raw.githubusercontent.com/api-evangelist/data-smartdublin-ie/refs/heads/main/apis.yml
@@ -16,14 +14,14 @@ tags:
   - Government Data
   - Municipal Government
   - Ireland
-created: '2026-06-04'
-modified: '2026-06-04'
+created: '2026-06-07'
+modified: '2026-06-07'
 specificationVersion: '0.19'
 apis:
   - aid: data-smartdublin-ie:catalog
-    name: Smart Dublin Open Data CKAN Action API
+    name: SmartDublin Open Data CKAN Action API
     description: >-
-      CKAN Action API for Smart Dublin Open Data, a consistent JSON-over-HTTP interface over a catalog of 929 datasets. Standard actions include package_search, package_show, package_list, organization_list, group_list, tag_list, and resource_search; datastore_search is available where the DataStore extension is enabled. Base URL https://data.smartdublin.ie/api/3/action/.
+      CKAN Action API for SmartDublin Open Data, ~929 datasets.
     humanURL: https://data.smartdublin.ie
     baseURL: https://data.smartdublin.ie/api/3/action
     tags:
@@ -31,8 +29,6 @@ apis:
       - Action API
       - Open Data
       - Catalog
-      - REST
-      - JSON
     properties:
       - type: Documentation
         url: https://docs.ckan.org/en/latest/api/
@@ -40,11 +36,11 @@ apis:
         url: https://data.smartdublin.ie
       - type: x-api-endpoint
         url: https://data.smartdublin.ie/api/3/action/status_show
+      - type: x-ckan-version
+        value: '2.9.14'
 common:
   - type: Website
     url: https://data.smartdublin.ie
-  - type: Documentation
-    url: https://docs.ckan.org/en/latest/api/
   - type: Plans
     url: plans/data-smartdublin-ie-plans-pricing.yml
   - type: RateLimits
