@@ -39,6 +39,8 @@ apis:
       - type: x-ckan-version
         value: '2.9.14'
 common:
+  - type: DomainSecurity
+    url: security/data-smartdublin-ie-domain-security.yml
   - type: Website
     url: https://data.smartdublin.ie
   - type: Plans
